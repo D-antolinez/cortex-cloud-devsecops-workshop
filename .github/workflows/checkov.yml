@@ -24,7 +24,7 @@ jobs:
     - name: Upload SARIF file
       uses: GitHub/codeql-action/upload-sarif@v3
       
-      # Results are generated only on a success or failure
+      # Results are generated only on a success or failur
       # this is required since GitHub by default won't run the next step
       # when the previous one has failed. Alternatively, enable soft_fail in checkov action.
       if: success() || failure()
