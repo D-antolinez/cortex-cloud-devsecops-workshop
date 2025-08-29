@@ -2,7 +2,7 @@ provider "google" {
   project = "dark-influence-458420e4" ##the project id of you lab instance
   region  = "us-central1"
 }
-
+#test
 resource "google_storage_bucket" "sample" {
   name          = "demo2-${random_id.Rand_suffix.hex}"
   location      = "us-central1"
